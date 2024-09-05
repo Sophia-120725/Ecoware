@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondoprincipal"
+    android:layout_height="match_parent"
+    tools:context="Vista8Activity2"
+    android:paddingHorizontal="15dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Contancto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        style="@style/EditText"
+        android:backgroundTint="@color/green"
+        android:layout_width="00dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        android:layout_marginTop="106dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:hint="Correo Electrónico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="0dp"
+        style="@style/EditText"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <EditText
+        android:id="@+id/sitioweb"
+        android:layout_width="0dp"
+        style="@style/EditText"
+        android:backgroundTint="@color/green"
+        android:layout_height="wrap_content"
+        android:hint="Sitio Web"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tel"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/asusnto"
+        android:layout_width="0dp"
+        style="@style/EditText"
+        android:layout_height="wrap_content"
+        android:hint="Asunto"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sitioweb"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="0dp"
+        style="@style/EditText"
+        android:layout_height="wrap_content"
+        android:hint="Mensaje"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/asusnto"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:backgroundTint="#008468"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Enviar"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensaje"
+        app:layout_constraintBottom_toTopOf="@id/clientecontacto"/>
+
+    <ImageView
+        android:id="@+id/clientecontacto"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/iconoformulario"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

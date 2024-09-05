@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ECOAware</string>
+    <string name="nombreusuario">  Nombre de usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="Iniciosesion">Iniciar Sesiòn</string>
+    <string name="Titulo2">CAMBIO CLIMATICO</string>
+    <string name="Btnsig">Siguiente</string>
+    <string name="Btnant">Anterior</string>
+    <string name="Btnenviar">Enviar</string>
+    <string name="Titulo3">RECICLAJE</string>
+    <string name="Titulo4">CONSERVACION DEL AGUA</string>
+    <string name="Titulo5">REFORESTACIÓN</string>
+    <string name="Titulo6">BENEFICIOS DEL CAMBIO CLIMATICO</string>
+    <string name="Titulo7">BENEFICIOS DEL RECICLAJE</string>
+    <string name="Titulo8">CUIDEMOS EL MEDIO AMBIENTE</string>
+    <string name="Titulo9">LOGIN</string>
+
+</resources>
