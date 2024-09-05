@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista9Activity2"
+    android:background="@drawable/fondoprincipal">
+
+    <ImageView
+        android:id="@+id/ecologo"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/ecoapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/welcome"
+        app:layout_constraintTop_toBottomOf="@id/ecologo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineaguia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+
+   <TextView
+       android:id="@+id/tvRecuperarContr"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Recuperar Contraseña"
+       android:textSize="30sp"
+       app:layout_constraintTop_toBottomOf="@id/lineaguia"
+       app:layout_constraintBottom_toTopOf="@id/username"
+       android:gravity="center"/>
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Correoelectronico@ejemplo.com"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/lineaguia" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#09AD76"
+        android:drawableRight="@drawable/loginicono"
+        android:paddingHorizontal="16dp"
+        android:text="Recuperar Contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

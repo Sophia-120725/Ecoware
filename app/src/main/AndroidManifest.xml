@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ConcienciaApp"
         tools:targetApi="31">
         <activity
+            android:name=".Vista9Activity2"
+            android:exported="false" />
+        <activity
             android:name=".Vista7Activity2"
             android:exported="false" />
         <activity
